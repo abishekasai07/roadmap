@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skills | SkillPath AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="../index.html" class="brand">
+        Skill<span>Path</span> AI
+    </a>
+
+    <nav>
+        <a href="../index.html">Dashboard</a>
+        <a href="analysis.html">Skill Gaps</a>
+        <a href="roadmap.html">Learning Path</a>
+        <a href="progress.html">Progress</a>
+    </nav>
+
+</header>
+
+
+<div class="page">
+
+    <div class="stepper">
+
+        <div class="step complete">
+            <b>1</b>
+            Department
+        </div>
+
+        <div class="step active">
+            <b>2</b>
+            Skills
+        </div>
+
+        <div class="step">
+            <b>3</b>
+            Assessment
+        </div>
+
+        <div class="step">
+            <b>4</b>
+            Profile
+        </div>
+
+        <div class="step">
+            <b>5</b>
+            Analysis
+        </div>
+
+        <div class="step">
+            <b>6</b>
+            Roadmap
+        </div>
+
+    </div>
+
+
+    <section class="page-header compact">
+
+        <span class="eyebrow">
+            STEP 02
+        </span>
+
+        <h1>
+            Build your skill profile
+        </h1>
+
+        <p>
+            Select what you already know. Your skills will
+            later be verified through assessment.
+        </p>
+
+    </section>
+
+
+    <div
+        id="selectedDepartment"
+        class="selected-dept"
+    >
+        Electronics & Communication Engineering
+    </div>
+
+
+    <div class="toolbar">
+
+        <input
+            id="skillSearchInput"
+            class="search-box"
+            type="text"
+            placeholder="Search skills..."
+        >
+
+        <div
+            id="categoryFilters"
+            class="filter-row"
+        ></div>
+
+    </div>
+
+
+    <div class="skills-layout">
+
+
+        <section>
+
+            <div
+                id="skillGrid"
+                class="skill-grid"
+            ></div>
+
+        </section>
+
+
+        <aside class="selected-panel card">
+
+            <div class="panel-title">
+
+                <h3>
+                    Selected Skills
+                </h3>
+
+                <span
+                    id="selectedCount"
+                    class="count-badge"
+                >
+                    0
+                </span>
+
+            </div>
+
+
+            <div id="selectedSkills">
+
+                <p class="muted">
+                    No skills selected yet.
+                </p>
+
+            </div>
+
+
+            <button
+                id="assessmentBtn"
+                class="btn btn-primary full"
+            >
+                Continue to Assessment →
+            </button>
+
+        </aside>
+
+    </div>
+
+</div>
+
+
+<div
+    id="skillModal"
+    class="modal hidden"
+>
+
+    <div class="modal-content">
+
+        <button
+            id="modalClose"
+            class="modal-close"
+        >
+            ×
+        </button>
+
+        <span class="eyebrow">
+            SKILL VERIFICATION
+        </span>
+
+        <h2 id="modalSkillName">
+            Skill
+        </h2>
+
+        <p>
+            How would you rate yourself?
+        </p>
+
+
+        <div
+            id="proficiencyOptions"
+            class="level-grid"
+        ></div>
+
+
+        <label>
+
+            Evidence / Project
+
+            <textarea
+                id="evidenceInput"
+                placeholder="Example: ESP32 Smart Agriculture Project"
+            ></textarea>
+
+        </label>
+
+
+        <div class="modal-actions">
+
+            <button
+                id="cancelModal"
+                class="btn btn-secondary"
+            >
+                Cancel
+            </button>
+
+            <button
+                id="addSkillBtn"
+                class="btn btn-primary"
+            >
+                Add Skill
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="../js/app.js"></script>
+<script src="../js/skills.js"></script>
+
+</body>
+</html>

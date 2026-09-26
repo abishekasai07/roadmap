@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Assessment | SkillPath AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="../index.html" class="brand">
+        Skill<span>Path</span> AI
+    </a>
+
+</header>
+
+
+<div class="page narrow">
+
+
+    <div class="stepper">
+
+        <div class="step complete">
+            <b>1</b>
+            Department
+        </div>
+
+        <div class="step complete">
+            <b>2</b>
+            Skills
+        </div>
+
+        <div class="step active">
+            <b>3</b>
+            Assessment
+        </div>
+
+        <div class="step">
+            <b>4</b>
+            Profile
+        </div>
+
+        <div class="step">
+            <b>5</b>
+            Analysis
+        </div>
+
+        <div class="step">
+            <b>6</b>
+            Roadmap
+        </div>
+
+    </div>
+
+
+    <section class="page-header compact">
+
+        <span class="eyebrow">
+            STEP 03
+        </span>
+
+        <h1>
+            Skill Assessment
+        </h1>
+
+        <p>
+            Verify your actual competency through a focused test.
+        </p>
+
+    </section>
+
+
+    <div class="assessment-top">
+
+        <span id="questionCounter">
+            Question 1 of 5
+        </span>
+
+        <span id="assessmentSkill">
+            C Programming
+        </span>
+
+    </div>
+
+
+    <div class="progress-bar">
+
+        <div
+            id="assessmentProgress"
+            class="progress-fill"
+            style="width:20%"
+        ></div>
+
+    </div>
+
+
+    <main class="assessment-card card">
+
+        <div
+            id="questionNumber"
+            class="question-number"
+        >
+            01
+        </div>
+
+
+        <h2 id="questionText">
+            Loading question...
+        </h2>
+
+
+        <div
+            id="options"
+            class="options"
+        ></div>
+
+    </main>
+
+
+    <div class="assessment-actions">
+
+        <button
+            id="prevBtn"
+            class="btn btn-secondary"
+        >
+            ← Previous
+        </button>
+
+
+        <button
+            id="nextBtn"
+            class="btn btn-primary"
+        >
+            Next →
+        </button>
+
+    </div>
+
+
+    <div
+        id="assessmentResult"
+        class="result-card hidden"
+    ></div>
+
+</div>
+
+
+<script src="../js/app.js"></script>
+<script src="../js/assessment.js"></script>
+
+</body>
+</html>

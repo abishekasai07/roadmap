@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skill DNA | SkillPath AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="../index.html" class="brand">
+        Skill<span>Path</span> AI
+    </a>
+
+    <nav>
+        <a href="../index.html">Dashboard</a>
+        <a href="analysis.html">Skill Gaps</a>
+        <a href="roadmap.html">Learning Path</a>
+        <a href="progress.html">Progress</a>
+    </nav>
+
+</header>
+
+
+<div class="page">
+
+
+    <div class="stepper">
+
+        <div class="step complete">
+            <b>1</b>
+            Department
+        </div>
+
+        <div class="step complete">
+            <b>2</b>
+            Skills
+        </div>
+
+        <div class="step complete">
+            <b>3</b>
+            Assessment
+        </div>
+
+        <div class="step active">
+            <b>4</b>
+            Profile
+        </div>
+
+        <div class="step">
+            <b>5</b>
+            Analysis
+        </div>
+
+        <div class="step">
+            <b>6</b>
+            Roadmap
+        </div>
+
+    </div>
+
+
+    <section class="page-header">
+
+        <span class="eyebrow">
+            VERIFIED PROFILE
+        </span>
+
+        <h1>
+            Your Skill DNA
+        </h1>
+
+        <p>
+            Your assessed competency profile across
+            major technology skill categories.
+        </p>
+
+    </section>
+
+
+    <div class="profile-grid">
+
+
+        <div class="card dna-card">
+
+            <div class="card-title">
+
+                <h3>
+                    Competency DNA
+                </h3>
+
+                <span class="badge badge-success">
+                    Verified
+                </span>
+
+            </div>
+
+
+            <div id="dnaBars"></div>
+
+        </div>
+
+
+        <div class="card confidence-card">
+
+            <div class="readiness-ring small">
+
+                <span id="confidenceValue">
+                    86<small>%</small>
+                </span>
+
+            </div>
+
+
+            <h3>
+                Assessment Confidence
+            </h3>
+
+
+            <p>
+                Confidence based on completed assessments.
+            </p>
+
+
+            <div class="verification-list">
+
+                <span>
+                    ✓ C Programming
+                </span>
+
+                <span>
+                    ✓ Digital Electronics
+                </span>
+
+                <span>
+                    ⚠ RTOS — Assessment required
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card skill-summary">
+
+        <div class="card-title">
+
+            <h3>
+                Skill Summary
+            </h3>
+
+        </div>
+
+
+        <div class="summary-columns">
+
+            <div>
+
+                <small>
+                    BEGINNER
+                </small>
+
+                <div id="beginnerSkills">
+                    —
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    INTERMEDIATE
+                </small>
+
+                <div id="intermediateSkills">
+                    —
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    ADVANCED
+                </small>
+
+                <div id="advancedSkills">
+                    —
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="bottom-actions">
+
+        <button
+            class="btn btn-primary"
+            onclick="location.href='analysis.html'"
+        >
+            View Career Analysis →
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="../js/app.js"></script>
+<script src="../js/profile.js"></script>
+
+</body>
+</html>

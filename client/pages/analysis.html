@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Career Analysis | SkillPath AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="topbar">
+
+    <a href="../index.html" class="brand">
+        Skill<span>Path</span> AI
+    </a>
+
+    <nav>
+
+        <a href="../index.html">
+            Dashboard
+        </a>
+
+        <a
+            href="analysis.html"
+            class="active"
+        >
+            Skill Gaps
+        </a>
+
+        <a href="roadmap.html">
+            Learning Path
+        </a>
+
+        <a href="progress.html">
+            Progress
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="page">
+
+
+    <!-- ================= STEPPER ================= -->
+
+    <div class="stepper">
+
+        <div class="step complete">
+            <b>1</b>
+            Department
+        </div>
+
+        <div class="step complete">
+            <b>2</b>
+            Skills
+        </div>
+
+        <div class="step complete">
+            <b>3</b>
+            Assessment
+        </div>
+
+        <div class="step complete">
+            <b>4</b>
+            Profile
+        </div>
+
+        <div class="step active">
+            <b>5</b>
+            Analysis
+        </div>
+
+        <div class="step">
+            <b>6</b>
+            Roadmap
+        </div>
+
+    </div>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header compact">
+
+        <span class="eyebrow">
+            CAREER INTELLIGENCE
+        </span>
+
+        <h1>
+            Career & Skill Gap Analysis
+        </h1>
+
+        <p>
+            Compare your verified competencies with the
+            skills required for different technology roles.
+        </p>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- TARGET ROLE SECTION -->
+    <!-- ================================================= -->
+
+    <section class="card">
+
+        <div class="card-title">
+
+            <div>
+
+                <span class="eyebrow">
+                    TARGET ROLE
+                </span>
+
+                <h2>
+                    What role do you want to become?
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="roleGrid"
+            class="role-grid"
+        >
+
+            <!-- ROLE 1 -->
+
+            <div
+                class="role-card selected"
+                data-role-id="1"
+            >
+
+                <span class="badge badge-success">
+                    RECOMMENDED MATCH
+                </span>
+
+                <h3>
+                    Firmware Engineer
+                </h3>
+
+                <div class="readiness">
+                    62%
+                </div>
+
+                <small>
+                    Current Readiness
+                </small>
+
+                <div class="gap-list">
+
+                    Top gaps:
+
+                    <br>
+
+                    Microcontrollers · RTOS · Embedded C
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="selectRole(1)"
+                >
+                    Analyze Role
+                </button>
+
+            </div>
+
+
+            <!-- ROLE 2 -->
+
+            <div
+                class="role-card"
+                data-role-id="2"
+            >
+
+                <span class="badge badge-warning">
+                    POTENTIAL
+                </span>
+
+                <h3>
+                    Embedded Systems Engineer
+                </h3>
+
+                <div class="readiness">
+                    58%
+                </div>
+
+                <small>
+                    Current Readiness
+                </small>
+
+                <div class="gap-list">
+
+                    Top gaps:
+
+                    <br>
+
+                    Microcontrollers · UART · RTOS
+
+                </div>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="selectRole(2)"
+                >
+                    Analyze Role
+                </button>
+
+            </div>
+
+
+            <!-- ROLE 3 -->
+
+            <div
+                class="role-card"
+                data-role-id="3"
+            >
+
+                <span class="badge badge-warning">
+                    POTENTIAL
+                </span>
+
+                <h3>
+                    IoT Engineer
+                </h3>
+
+                <div class="readiness">
+                    71%
+                </div>
+
+                <small>
+                    Current Readiness
+                </small>
+
+                <div class="gap-list">
+
+                    Top gaps:
+
+                    <br>
+
+                    Protocols · Cloud · Embedded C
+
+                </div>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="selectRole(3)"
+                >
+                    Analyze Role
+                </button>
+
+            </div>
+
+
+            <!-- ROLE 4 -->
+
+            <div
+                class="role-card"
+                data-role-id="4"
+            >
+
+                <span class="badge badge-warning">
+                    DEVELOPING
+                </span>
+
+                <h3>
+                    VLSI Design Engineer
+                </h3>
+
+                <div class="readiness">
+                    28%
+                </div>
+
+                <small>
+                    Current Readiness
+                </small>
+
+                <div class="gap-list">
+
+                    Top gaps:
+
+                    <br>
+
+                    Verilog · Digital Design · RTL
+
+                </div>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="selectRole(4)"
+                >
+                    Analyze Role
+                </button>
+
+            </div>
+
+
+            <!-- ROLE 5 -->
+
+            <div
+                class="role-card"
+                data-role-id="5"
+            >
+
+                <span class="badge badge-warning">
+                    DEVELOPING
+                </span>
+
+                <h3>
+                    Software Engineer
+                </h3>
+
+                <div class="readiness">
+                    49%
+                </div>
+
+                <small>
+                    Current Readiness
+                </small>
+
+                <div class="gap-list">
+
+                    Top gaps:
+
+                    <br>
+
+                    DSA · System Design · Git
+
+                </div>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="selectRole(5)"
+                >
+                    Analyze Role
+                </button>
+
+            </div>
+
+
+            <!-- ROLE 6 -->
+
+            <div
+                class="role-card"
+                data-role-id="6"
+            >
+
+                <span class="badge badge-warning">
+                    DEVELOPING
+                </span>
+
+                <h3>
+                    AI / ML Engineer
+                </h3>
+
+                <div class="readiness">
+                    24%
+                </div>
+
+                <small>
+                    Current Readiness
+                </small>
+
+                <div class="gap-list">
+
+                    Top gaps:
+
+                    <br>
+
+                    Python · Statistics · ML
+
+                </div>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="selectRole(6)"
+                >
+                    Analyze Role
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- SELECTED ROLE SUMMARY -->
+    <!-- ================================================= -->
+
+    <section class="card">
+
+        <div class="card-title">
+
+            <div>
+
+                <span class="eyebrow">
+                    SELECTED ROLE
+                </span>
+
+                <h2 id="selectedRoleName">
+                    Firmware Engineer
+                </h2>
+
+            </div>
+
+
+            <span class="badge badge-success">
+                62% READINESS
+            </span>
+
+        </div>
+
+
+        <div class="detail-grid">
+
+            <div>
+
+                <small>
+                    CURRENT LEVEL
+                </small>
+
+                <strong>
+                    Intermediate
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    TARGET LEVEL
+                </small>
+
+                <strong>
+                    Job-ready
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    VERIFIED SKILLS
+                </small>
+
+                <strong>
+                    6
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    SKILL GAPS
+                </small>
+
+                <strong>
+                    4
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- SKILL GAP MATRIX -->
+    <!-- ================================================= -->
+
+    <section class="analysis-grid">
+
+
+        <!-- GAP TABLE -->
+
+        <div class="card">
+
+            <div class="card-title">
+
+                <div>
+
+                    <span class="eyebrow">
+                        COMPETENCY COMPARISON
+                    </span>
+
+                    <h3>
+                        Skill Gap Matrix
+                    </h3>
+
+                </div>
+
+
+                <span class="badge badge-warning">
+                    Priority Based
+                </span>
+
+            </div>
+
+
+            <div class="table-wrap">
+
+                <table class="skill-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Skill
+                            </th>
+
+                            <th>
+                                Your Level
+                            </th>
+
+                            <th>
+                                Required
+                            </th>
+
+                            <th>
+                                Gap
+                            </th>
+
+                            <th>
+                                Priority
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="gapTable">
+
+                        <tr
+                            onclick="showGap(8)"
+                            style="cursor:pointer"
+                        >
+
+                            <td>
+                                <strong>
+                                    Microcontrollers
+                                </strong>
+
+                                <br>
+
+                                <small>
+                                    Embedded
+                                </small>
+
+                            </td>
+
+                            <td>
+                                1 / 5
+                            </td>
+
+                            <td>
+                                5 / 5
+                            </td>
+
+                            <td>
+                                <strong>
+                                    4
+                                </strong>
+                            </td>
+
+                            <td>
+
+                                <span class="badge badge-danger">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr
+                            onclick="showGap(7)"
+                            style="cursor:pointer"
+                        >
+
+                            <td>
+                                <strong>
+                                    Embedded C
+                                </strong>
+
+                                <br>
+
+                                <small>
+                                    Programming
+                                </small>
+
+                            </td>
+
+                            <td>
+                                2 / 5
+                            </td>
+
+                            <td>
+                                4 / 5
+                            </td>
+
+                            <td>
+                                <strong>
+                                    2
+                                </strong>
+                            </td>
+
+                            <td>
+
+                                <span class="badge badge-danger">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr
+                            onclick="showGap(14)"
+                            style="cursor:pointer"
+                        >
+
+                            <td>
+                                <strong>
+                                    RTOS
+                                </strong>
+
+                                <br>
+
+                                <small>
+                                    Embedded
+                                </small>
+
+                            </td>
+
+                            <td>
+                                0 / 5
+                            </td>
+
+                            <td>
+                                3 / 5
+                            </td>
+
+                            <td>
+                                <strong>
+                                    3
+                                </strong>
+                            </td>
+
+                            <td>
+
+                                <span class="badge badge-danger">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    UART
+                                </strong>
+
+                                <br>
+
+                                <small>
+                                    Communication
+                                </small>
+
+                            </td>
+
+                            <td>
+                                3 / 5
+                            </td>
+
+                            <td>
+                                3 / 5
+                            </td>
+
+                            <td>
+                                0
+                            </td>
+
+                            <td>
+
+                                <span class="badge badge-success">
+                                    MET
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Git
+                                </strong>
+
+                                <br>
+
+                                <small>
+                                    Tools
+                                </small>
+
+                            </td>
+
+                            <td>
+                                3 / 5
+                            </td>
+
+                            <td>
+                                3 / 5
+                            </td>
+
+                            <td>
+                                0
+                            </td>
+
+                            <td>
+
+                                <span class="badge badge-success">
+                                    MET
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRIORITY SKILLS -->
+
+        <aside class="card priority-card">
+
+            <div class="card-title">
+
+                <div>
+
+                    <span class="eyebrow">
+                        NEXT FOCUS
+                    </span>
+
+                    <h3>
+                        Priority Skills
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div id="prioritySkills">
+
+
+                <div class="priority-item">
+
+                    <strong>
+                        01 · Microcontrollers
+                    </strong>
+
+                    <small>
+                        Gap: 4 · Importance: 5/5
+                    </small>
+
+                    <br>
+
+                    <span class="badge badge-danger">
+                        HIGH PRIORITY
+                    </span>
+
+                </div>
+
+
+                <div class="priority-item">
+
+                    <strong>
+                        02 · RTOS
+                    </strong>
+
+                    <small>
+                        Gap: 3 · Importance: 4/5
+                    </small>
+
+                    <br>
+
+                    <span class="badge badge-danger">
+                        HIGH PRIORITY
+                    </span>
+
+                </div>
+
+
+                <div class="priority-item">
+
+                    <strong>
+                        03 · Embedded C
+                    </strong>
+
+                    <small>
+                        Gap: 2 · Importance: 5/5
+                    </small>
+
+                    <br>
+
+                    <span class="badge badge-warning">
+                        HIGH PRIORITY
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- GAP EXPLANATION -->
+    <!-- ================================================= -->
+
+    <section class="card explanation-card">
+
+        <span class="eyebrow">
+            SKILL BREAKDOWN
+        </span>
+
+
+        <h2 id="detailSkill">
+            Microcontrollers
+        </h2>
+
+
+        <p class="muted">
+            Click any skill from the matrix to understand
+            why it has been prioritized.
+        </p>
+
+
+        <div class="detail-grid">
+
+
+            <div>
+
+                <small>
+                    YOUR LEVEL
+                </small>
+
+                <strong id="detailCurrent">
+                    1 / 5
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    REQUIRED
+                </small>
+
+                <strong id="detailRequired">
+                    5 / 5
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    GAP
+                </small>
+
+                <strong id="detailGap">
+                    4
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    IMPORTANCE
+                </small>
+
+                <strong id="detailImportance">
+                    HIGH
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <h4>
+            Prerequisites
+        </h4>
+
+
+        <div class="filter-row">
+
+            <span class="filter">
+                C
+            </span>
+
+            <span class="filter">
+                Digital Electronics
+            </span>
+
+        </div>
+
+
+        <h4>
+            Why is this prioritized?
+        </h4>
+
+
+        <p id="detailReason">
+
+            This skill has a large proficiency gap,
+            high importance for the selected role,
+            and strong dependency impact on other skills.
+            
+        </p>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- WHAT IF SIMULATOR -->
+    <!-- ================================================= -->
+
+    <section class="card what-if">
+
+        <span class="eyebrow">
+            WHAT-IF SIMULATOR
+        </span>
+
+
+        <h2>
+            What if I improve a skill?
+        </h2>
+
+
+        <p class="muted">
+            Simulate how improving a specific competency
+            could change your role readiness.
+        </p>
+
+
+        <div class="simulator">
+
+
+            <label>
+
+                Skill
+
+                <select id="simSkill">
+
+                    <option>
+                        Microcontrollers
+                    </option>
+
+                    <option>
+                        Embedded C
+                    </option>
+
+                    <option>
+                        RTOS
+                    </option>
+
+                </select>
+
+            </label>
+
+
+            <label>
+
+                New Level
+
+                <select id="simLevel">
+
+                    <option value="2">
+                        2 — Basic
+                    </option>
+
+                    <option value="3">
+                        3 — Intermediate
+                    </option>
+
+                    <option value="4">
+                        4 — Advanced
+                    </option>
+
+                    <option value="5">
+                        5 — Job-ready
+                    </option>
+
+                </select>
+
+            </label>
+
+
+            <button
+                id="simulateBtn"
+                class="btn btn-primary"
+            >
+                Simulate Improvement
+            </button>
+
+        </div>
+
+
+        <div
+            id="simulationResult"
+            class="simulation-result hidden"
+        >
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- EMPLOYERS -->
+    <!-- ================================================= -->
+
+    <section class="card">
+
+        <div class="card-title">
+
+            <div>
+
+                <span class="eyebrow">
+                    ROLE ECOSYSTEM
+                </span>
+
+                <h3>
+                    Example Employers
+                </h3>
+
+            </div>
+
+
+            <span class="muted">
+                Organizations with roles commonly
+                involving this competency set
+            </span>
+
+        </div>
+
+
+        <div
+            id="companyGrid"
+            class="company-grid"
+        >
+
+            <div class="company">
+                NVIDIA
+            </div>
+
+            <div class="company">
+                Intel
+            </div>
+
+            <div class="company">
+                Qualcomm
+            </div>
+
+            <div class="company">
+                Texas Instruments
+            </div>
+
+            <div class="company">
+                NXP
+            </div>
+
+            <div class="company">
+                STMicroelectronics
+            </div>
+
+            <div class="company">
+                Bosch
+            </div>
+
+            <div class="company">
+                Renesas
+            </div>
+
+            <div class="company">
+                Samsung
+            </div>
+
+            <div class="company">
+                AMD
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- NEXT STEP -->
+    <!-- ================================================= -->
+
+    <div class="bottom-actions">
+
+        <button
+            class="btn btn-primary"
+            onclick="location.href='roadmap.html'"
+        >
+            Generate My Learning Roadmap →
+        </button>
+
+    </div>
+
+
+</div>
+
+
+<script src="../js/app.js"></script>
+<script src="../js/analysis.js"></script>
+
+</body>
+
+</html>
